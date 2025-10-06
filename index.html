@@ -1,0 +1,107 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Bao Vo Hoang — Portfolio</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header id="header">
+    <div class="header-inner">
+      <h1>Bao Vo Hoang</h1>
+      <nav class="main-nav">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="flexbox-projects.html">Projects</a></li>
+          <li><a href="grid-gallery.html">Gallery</a></li>
+          <li><a href="bootstrap-resume.html">Resume</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section id="about" class="content-section">
+      <h2 class="section-title">About Me</h2>
+      <div class="about-grid">
+        <div>
+          <p>Hello! My name is <strong>Bao Vo</strong>. I am a <em>dedicated student</em> with a passion for learning and growth.</p>
+          <p>I enjoy <mark>coding</mark>, exploring new technologies, and working on creative projects.</p>
+          <blockquote>“You only live once, but if you do it right, once is enough.” – Mae West</blockquote>
+        </div>
+        <div>
+          <img src="images/img1.jpg" alt="A photo of Bao Vo" class="profile-photo"/>
+        </div>
+      </div>
+    </section>
+
+    <section id="school" class="content-section">
+      <h2 class="section-title">School Life</h2>
+      <article>
+        <p>I am currently studying at <abbr title="Algonquin College">Algonquin College</abbr>. My favorite subjects include programming and web development.</p>
+        <table>
+          <caption>Academic Timeline</caption>
+          <tr>
+            <th>Year</th>
+            <th>Program</th>
+          </tr>
+          <tr>
+            <td>2023</td>
+            <td>Computer Engineering</td>
+          </tr>
+        </table>
+      </article>
+    </section>
+
+    <section id="work" class="content-section">
+      <h2 class="section-title">Work Experience</h2>
+      <ol>
+        <li>Intern at Gihotech Company (2024–2025) — Assisted in web development projects for hotel & restaurant management.</li>
+      </ol>
+      <aside>
+        <p>Additional insights: I also worked on school projects and volunteered for community events.</p>
+      </aside>
+    </section>
+
+    <section id="hobbies" class="content-section">
+      <h2 class="section-title">Hobbies & Interests</h2>
+      <ul>
+        <li>Gaming — I enjoy Minecraft and FPS games.</li>
+        <li>Photography — Capturing nature is my passion.</li>
+      </ul>
+    </section>
+
+    <section id="contact" class="content-section">
+      <h2 class="section-title">Contact</h2>
+      <form>
+        <label for="name">Name:</label>
+        <input class="form-field" type="text" id="name" name="name">
+
+        <label for="email">Email:</label>
+        <input class="form-field" type="email" id="email" name="email">
+
+        <label for="phone">Phone:</label>
+        <input class="form-field" type="tel" id="phone" name="phone">
+
+        <label for="reason">Reason for Contact:</label>
+        <select class="form-field" id="reason" name="reason">
+          <option value="job">Job Opportunity</option>
+          <option value="collab">Collaboration</option>
+          <option value="general">General Inquiry</option>
+        </select>
+
+        <label for="message">Message:</label>
+        <textarea class="form-field" id="message" name="message" rows="4"></textarea>
+
+        <button class="form-button" type="submit">Submit</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>Contact: vo000084@algonquinlive.com | Phone: 123-456-7890 | City: Ottawa</p>
+    <p>© 2025 Bao Vo. All rights reserved. <a rel="noopener" href="https://www.linkedin.com/in/bao-vo-hoang-22a53b231/">LinkedIn</a></p>
+  </footer>
+</body>
+</html>

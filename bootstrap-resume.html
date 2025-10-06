@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <title>Resume — Bao Vo Hoang</title>
+
+  <!-- Bootstrap CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Your styles (bootstrap overrides / small tweaks) -->
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    /* a few tiny local tweaks for resume */
+    .resume-section { margin-bottom: 1.25rem; }
+    .skill-badge { margin-right: 6px; margin-bottom: 6px; }
+  </style>
+</head>
+<body>
+  <header id="header" class="mb-4">
+    <div class="header-inner container">
+      <div class="d-flex justify-content-between align-items-center py-3">
+        <h1 class="mb-0">Bao Vo Hoang</h1>
+        <nav class="main-nav">
+          <ul class="list-unstyled d-flex mb-0">
+            <li class="me-3"><a href="index.html">Home</a></li>
+            <li class="me-3"><a href="flexbox-projects.html">Projects</a></li>
+            <li class="me-3"><a href="grid-gallery.html">Gallery</a></li>
+            <li><a href="bootstrap-resume.html">Resume</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <main class="container">
+    <div class="row">
+      <!-- Left column (contact + skills) -->
+      <aside class="col-md-4">
+        <div class="card mb-3">
+          <div class="card-body">
+            <h5 class="card-title">Contact</h5>
+            <p class="card-text mb-1">vo000084@algonquinlive.com</p>
+            <p class="card-text">123-456-7890</p>
+            <p class="card-text">Ottawa, Canada</p>
+          </div>
+        </div>
+
+        <div class="card resume-section">
+          <div class="card-body">
+            <h5 class="card-title">Skills</h5>
+            <div class="mb-2">
+              <span class="badge bg-primary skill-badge">HTML</span>
+              <span class="badge bg-primary skill-badge">CSS</span>
+              <span class="badge bg-primary skill-badge">JavaScript</span>
+              <span class="badge bg-primary skill-badge">React</span>
+            </div>
+
+            <h6 class="mt-3">Skill levels</h6>
+            <div class="mb-2">
+              <div class="progress">
+                <div class="progress-bar" role="progressbar" style="width: 80%">Web Dev — 80%</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </aside>
+
+      <!-- Right column (education + experience + projects) -->
+      <section class="col-md-8">
+        <div class="card resume-section">
+          <div class="card-body">
+            <h4 class="card-title">Education</h4>
+            <h6>Algonquin College — Computer Engineering</h6>
+            <p class="mb-0"><small>2023 — Present</small></p>
+          </div>
+        </div>
+
+        <div class="card resume-section">
+          <div class="card-body">
+            <h4 class="card-title">Work Experience</h4>
+
+            <div class="mb-3">
+              <h6 class="mb-0">Web Development Intern — Gihotech</h6>
+              <small class="text-muted">2024 — 2025</small>
+              <p class="mt-2">Helped build internal dashboards and booking systems for hotels and restaurants. Implemented UI features and assisted with testing.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="card resume-section">
+          <div class="card-body">
+            <h4 class="card-title">Projects</h4>
+            <ul>
+              <li>Hotel Management Dashboard — React/Node project for coursework.</li>
+              <li>Safe Walkie — mobile prototype (React Native + Firebase).</li>
+              <li>Weather Map App — interactive map & API integration.</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <footer class="mt-4 py-3 bg-light">
+    <div class="container text-center">
+      <p>© 2025 Bao Vo — vo000084@algonquinlive.com</p>
+    </div>
+  </footer>
+
+  <!-- Bootstrap JS (optional for interactive components) -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

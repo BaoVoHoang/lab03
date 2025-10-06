@@ -1,0 +1,54 @@
+/* GRID GALLERY STYLES */
+.gallery-main { padding: 20px; max-width: 1200px; margin: 0 auto; }
+
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 12px;
+  align-items: stretch;
+}
+
+/* Make some items span columns/rows */
+.gallery-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  border-radius: 6px;
+}
+
+/* Item wrapper */
+.gallery-item {
+  background: #fff;
+  border-radius: 6px;
+  overflow: hidden;
+  border: 1px solid #e2e2e2;
+  display: flex;
+  flex-direction: column;
+}
+
+/* captions */
+.gallery-item figcaption {
+  padding: 8px;
+  font-size: 0.9rem;
+  color: #333;
+  background: #fff;
+}
+
+/* span two columns for featured */
+.gallery-item.span-2 { grid-column: span 2; }
+
+/* tall item spans two rows */
+.gallery-item.tall { grid-row: span 2; }
+
+/* Responsive breakpoints */
+@media (max-width: 1000px) {
+  .gallery-grid { grid-template-columns: repeat(3, 1fr); }
+}
+@media (max-width: 700px) {
+  .gallery-grid { grid-template-columns: repeat(2, 1fr); }
+  .gallery-item.span-2 { grid-column: span 2; } /* still full width in small screens */
+}
+@media (max-width: 420px) {
+  .gallery-grid { grid-template-columns: 1fr; }
+}
